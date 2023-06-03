@@ -1,4 +1,4 @@
-# Business_project
+# BPM_project
 Project for Business and project management, A.Y. 2022-23
 
 ## Introduction:
