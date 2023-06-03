@@ -13,8 +13,8 @@ To achieve our objective, we employed the generative AI model GPT 3.5 Turbo. We 
 ## Validation Metrics:
 Throughout the project, we employed various validation metrics to assess the quality and accuracy of the generated user guides. These metrics allowed us to evaluate the performance of our generative AI-based solution. These included:
   
-  *-Self-assessment
-  -Length analysis
-  -Cosine similarity
-  -Human evaluation
-  -Structural Similarity Index (SSIM)
+  *-Self-assessment*
+  *-Length analysis*
+  *-Cosine similarity*
+  *-Human evaluation*
+  *-Structural Similarity Index (SSIM)*
