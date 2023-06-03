@@ -1,5 +1,5 @@
 # Business_project
-Project of Business and project management, A.Y. 2022-23
+Project for Business and project management, A.Y. 2022-23
 
 ## Introduction:
 Welcome to the presentation of our business project on generative AI for user guide generation. In this project, we explored the potential of using generative AI to automatically generate comprehensive and informative user guides from product specifications. Our main objective was to investigate the capabilities and limitations of generative AI in handling complex specifications and streamlining the user guide creation process.
