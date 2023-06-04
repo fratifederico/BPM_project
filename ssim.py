@@ -1,6 +1,5 @@
 import numpy as np
 from skimage.metrics import structural_similarity as ssim
-from PIL import Image
 
 
 def image_score(image1, image2):

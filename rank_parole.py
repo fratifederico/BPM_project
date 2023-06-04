@@ -1,4 +1,3 @@
-from imp import reload
 from nltk.probability import FreqDist
 import numpy as np
 import matplotlib.pyplot as plt
@@ -8,7 +7,7 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from nltk.tag import pos_tag
 from text_extraction_from_PDF import extract_text_from_pdf
-import inflect
+
 
 # Aggiungi la seguente linea per verificare se i dati sono già presenti
 if not nltk.data.find('tokenizers/punkt'):
@@ -116,15 +115,6 @@ def plot_rank_parole(text1, text2, num_keywords, index):
     top_keywords2 = get_top_keywords(text2, num_keywords)
     plot_histogram(top_keywords1, top_keywords2, index)
 
-
-"""
-# Esempio di utilizzo dello script
-
-text1 = "The mountain stands majestically before my eyes. The snow sparkles in the sunlight, creating a magnificent spectacle. Tall trees rise, dressed in vibrant green. The wind blows gently, carrying the scent of pine and moss. I feel in harmony with nature, surrounded by its pristine beauty."
-text2 = "The mountain stands majestically before my eyes. The snow sparkles in the sunlight, creating a magnificent spectacle. Tall trees rise, dressed in vibrant green. The wind blows gently, carrying the scent of pine and moss. I feel in harmony with nature, surrounded by its pristine beauty."
-
-plot_rank_parole(text1, text2, 5, 0)
-"""
 
 i = 0
 for i in range(21):

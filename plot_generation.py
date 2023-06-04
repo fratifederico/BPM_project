@@ -1,7 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.font_manager import FontProperties
-
 from grafici_medie_voti_nostri import create_histogram, create_histogram_simple, create_histogram_medium, \
     create_histogram_complex
 

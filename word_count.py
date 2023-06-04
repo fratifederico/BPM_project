@@ -1,5 +1,4 @@
 import re
-from text_extraction_from_PDF import extract_text_from_pdf
 
 def word_count(input_string):
     """

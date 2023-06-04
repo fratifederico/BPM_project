@@ -1,8 +1,6 @@
 import openai
-import requests
 import ast
 import requests
-import pandas as pd
 
 
 def image_generation(random_row):
@@ -37,10 +35,6 @@ def image_generation(random_row):
     )
     image_prompt = risposta.choices[0].message.content
 
-    ### problem with the 20th row of the dataset
-    #print(image_prompt)
-    #image_prompt = "Create an image for a beard trimmer that also has a chamber for the trimmed hair. The image should highlight the product's features and be attention-grabbing, to highlight the product features."
-    ###
 
 
     response = openai.Image.create(
