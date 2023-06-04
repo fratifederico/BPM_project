@@ -23,7 +23,7 @@ def random_sampling(numero_campioni):
     campioni_prelevati.to_csv("processed_dataset/random_sampled_dataset.csv")
 
 
-# random_sampling(70)
+random_sampling(40)
 
 # Carica il dataset
 df = pd.read_csv("processed_dataset/random_sampled_dataset.csv")
@@ -36,13 +36,3 @@ righe_selezionate.drop("Unnamed: 0", inplace=True, axis=1)
 # Salva le righe selezionate in un nuovo DataFrame o file CSV
 righe_selezionate.to_csv("processed_dataset/random_sampled_dataset.csv")
 
-"""
-# Aprire un file di testo in modalità scrittura
-df = pd.read_csv("processed_dataset/random_sampled_dataset.csv")
-with open('output/product with indexes.txt', 'w') as file:
-    
-    for num in range(39, 45):
-        output = str(num) + ": " + df.loc[num, 'product_name']
-        print(output)
-        file.write(output + '\n')
-"""
