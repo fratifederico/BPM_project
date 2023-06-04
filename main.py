@@ -1,7 +1,5 @@
 import binascii
-
 import openai
-from dataset_preprocessing import processed_dataset
 from image_generation import image_generation
 from user_guide_generation import user_guide_generation
 from user_guide_score import user_guide_score
@@ -16,8 +14,6 @@ from rank_parole import plot_rank_parole
 
 openai.api_key = "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"
 
-# for the moment use the "tech" string for the tech_dataset and the "amazon" string for the other
-# dataset = processed_dataset()
 dataset = pd.read_csv("processed_dataset/random_sampled_dataset.csv")
 
 i = 0
@@ -81,7 +77,7 @@ while i <= numero_iterazioni:
         print("errore di padding incorretto nella pdf generation")
         continue
 
-"""    
+
 # prendo un sample del dataset
 random_row = dataset.sample(n=1)
 random_row.to_csv("output/random_row.txt", sep="\t", index=False)
@@ -91,28 +87,19 @@ user_guide = user_guide_generation(random_row)
 
 # valutazione delle user guide
 
-"""
-# cosine similarity
-###
-
 # attesa di 3 secondi per evitare "RateLimitError" di openai
-# time.sleep(3)
-# score = user_guide_score(random_row, user_guide)
+time.sleep(3)
+score = user_guide_score(random_row, user_guide)
 
-""""
-# qui manca la valutazione della user guide
-testo_estratto = text_extraction_from_pdf("path_guida_reale.pdf");
+testo_estratto = extract_text_from_pdf("path_guida_reale.pdf");
 
-# confronto
-
-"""
 
 # generazione di un immagine con DALL-E
-"""
+
 time.sleep(10)
 image_url = image_generation(random_row)
 
 #genero il pdf
 time.sleep(3)
 pdf_generation()
-"""
+
