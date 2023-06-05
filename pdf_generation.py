@@ -38,7 +38,7 @@ def pdf_generation(i):
     image2 = img_to_base64(image3_path)
 
     # rimuovere
-    openai.api_key = "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"
+    openai.api_key = "insert api key here"
     prompt = "impagina il seguente testo con dei tag html per migliorare la qualità di visualizzazione per l'utente finale (restituisci solo l'ouput atteso):\n\n" + user_guide
 
     # Chiamata all'API di OpenAI utilizzando il prompt
@@ -83,12 +83,12 @@ def pdf_generation(i):
     payload_json = json.dumps(payload)
 
     # parte relativa alla generazione del token JWT
-    secret_key = "6a38d6387a09d2635f06f40b4a46a7a2698fcd0d6b078a37cb335e1a04085fce"
+    secret_key = "insert secret key from PDFgeneratorAPI here"
 
     # Definisci il payload del JWT
     authentication_payload = {
         "iss": "c9f1435c05e3e2a227692a3a182656c567dde43b3b0f299e9bef8036d6cc6ab1",
-        "sub": "giuliocapecchi2000@gmail.com",
+        "sub": "insert email here",
         "exp": 83738594538954783
     }
 

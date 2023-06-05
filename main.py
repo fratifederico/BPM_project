@@ -12,7 +12,7 @@ import os
 from cosine_similarity import calculate_cosine_similarity
 from rank_parole import plot_rank_parole
 
-openai.api_key = "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"
+openai.api_key = "insert api key here"
 
 dataset = pd.read_csv("processed_dataset/random_sampled_dataset.csv")
 
